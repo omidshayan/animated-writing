@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type js</title>
+    <script src="js/typed.min.js"></script>
+    <style>
+        div{
+            background-color: yellowgreen;
+            font-size: 20px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is: <span id="element1"></span>
+    </div>
+    <div>
+       this is:  <span id="element2"></span>
+    </div>
+
+    <script>
+        var typed = new Typed('#element1', {
+  strings: ["First sentence.", "Second sentence."],
+  typeSpeed: 30,
+  loop: true
+});
+
+var typed = new Typed('#element2', {
+  strings: ["First sentence.", "Second sentence."],
+  typeSpeed: 100,
+  loop: true
+});
+    </script>
+</body>
+</html>
